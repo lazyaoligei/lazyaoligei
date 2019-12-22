@@ -1,0 +1,3 @@
+<!--miniprogram/shuoming/shuoming.wxml-->
+<text class="hy">这是一款便捷学生生活的小程序，可以实现在线求帮忙/帮忙，现在只是测试版本所以大家可以去体验它的发单接单功能，先不要在里面透露个人信息，如果想登陆，可以一会注册账号，如果不想试，可以输入账号密码都是123，祝大家玩的高兴</text>
+<button bindtap="anwo" class="anwo">按我体验</button>

@@ -1,0 +1,11 @@
+<view wx:for="{{information}}" wx:key="key" class="all">
+    <!--index为每个数据对应的下标-->
+    <view class="head">发单用户信息请保存好</view>
+    <!--item就相当于数组名+下标的结合体，适用于调用数组所有数据-->
+    <view class="cha">性别（0为男）：{{item.information.sex}}</view>
+    <view class="cha">电话：{{item.information.mobile}}</view>
+    <view class="cha">QQ号：{{item.information.mobile}}</view>
+    <view class="cha">电话：{{item.information.tecent}}</view>
+    <view class="cha">微信：{{item.information.weixin}}</view>
+    <view class="cha">介绍：{{item.information.introduction}}</view>
+</view>

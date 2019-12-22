@@ -1,0 +1,9 @@
+<view wx:for="{{output}}" wx:key="key" class="all">
+    <!--index为每个数据对应的下标-->
+    <view class="head">我已经接的单{{index+1}}</view>
+    <!--item就相当于数组名+下标的结合体，适用于调用数组所有数据-->
+    <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575826729345&di=d3492a826c39f9ed8b2c3d9defcb4b78&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201901%2F22%2F20190122112311_puhzq.gif" class="userimage"></image>
+    <view class="cha">昵称：{{item.output.nickname}}</view>
+    <view class="cha">需求：{{item.output.require}}</view>
+    <view class="cha">悬赏：{{item.output.payment}}</view>
+</view>

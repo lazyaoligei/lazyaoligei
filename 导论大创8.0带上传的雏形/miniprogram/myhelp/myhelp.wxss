@@ -1,0 +1,59 @@
+page{
+background-image:url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575824597721&di=984b2b6552f6095b9423cb92e868bd03&imgtype=0&src=http%3A%2F%2Fatt.kidblog.cn%2Fxm%2F201408%2F17%2F2660700_1408267923g8LY.gif
+)
+}
+.all{
+  width: 95%;
+  border: solid #3b137c;
+  margin-top: 15px;
+  text-align: center;
+  background: #d0e5fb;
+  border-radius:8%;
+  border-width:1px;
+  box-shadow:6rpx 6rpx 6rpx 6rpx #620c92;
+  margin-left: 5px;
+}
+.userimage{
+ width: 100px;
+ height: 80px;
+}
+.ttaapp {
+	box-shadow:inset 0px 4px 1px -1px #efdcfb;
+	background:linear-gradient(to bottom, #dfbdfa 5%, #bc80ea 100%);
+	background-color:#dfbdfa;
+	border-radius:15px;
+	border:2px solid #8d3bc7;
+	cursor:pointer;
+	color:pink;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:9px 20px;
+	text-decoration:none;
+	text-shadow:1px 1px 11px #9752cc;
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 5px;
+  width: 60%;
+  margin-left: 45px;
+}
+.ttaapp:hover {
+	background:linear-gradient(to bottom, #bc80ea 5%, #dfbdfa 100%);
+	background-color:#bc80ea;
+}
+.ttaapp:active {
+	position:relative;
+	top:1px;
+}
+.cha{
+  font-weight: bold;
+  font-size: 20px;
+  color: #b73ce7;
+  font-family:Microsoft JhengHei;
+}
+.head{
+  font-weight: bold;
+  font-size: 25px;
+  color: #f58fad;
+  font-family:Microsoft JhengHei;
+}

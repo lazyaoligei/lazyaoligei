@@ -1,0 +1,53 @@
+<view class="swiper-tab">
+  <view class="swiper-tab-list1 {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">查看订单</view>
+  <view class="swiper-tab-list2 {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">发布需求</view>
+  <view class="swiper-tab-list3 {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">关于我的</view>
+  <view class="swiper-tab-list4 {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="swichNav">使用说明</view>
+</view>
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight+5000}}px" bindchange="bindChange">
+  <swiper-item>
+<view wx:for="{{output}}" wx:key="key" class="all">
+    <!--index为每个数据对应的下标-->
+    <view class="head">{{item.output.nickname}}同学的不情之请</view>
+    <!--item就相当于数组名+下标的结合体，适用于调用数组所有数据-->
+    <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575826729345&di=d3492a826c39f9ed8b2c3d9defcb4b78&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201901%2F22%2F20190122112311_puhzq.gif" class="userimage"></image>
+    <view class="cha">昵称：{{item.output.nickname}}</view>
+    <view class="cha">需求：{{item.output.require}}</view>
+    <view class="cha">悬赏：{{item.output.payment}}</view>
+    <button bindtap="tttaaappp" class="ttaapp" data-id="{{index}}">按我接单</button>
+</view>
+  </swiper-item>
+  <swiper-item>
+<view class="all2">
+<view class="headtitle">漂流de订单</view>
+<view class="cha">输入昵称</view>
+<textarea bindinput="nickname" class="kuang0" placeholder="输入您可以展示给所有人的化名"></textarea>
+<view class="cha">输入需求</view>
+<textarea bindinput="require" class="kuang" placeholder="输入您目前需要他人帮忙做的事情"></textarea>
+<view class="cha">输入悬赏</view>
+<textarea bindinput="payment" class="kuang" placeholder="输入可以吸引大家帮您的暖心悬赏"></textarea>
+<view class="headtitle">PS:尽量简洁，一目了然</view>
+<button bindtap="tap" class="tap">送出订单</button>
+</view>
+  </swiper-item>
+  <swiper-item>
+  <view class="hua">各位言出必践</view>
+  <view class="hua">小编随时执法</view>
+  <image class="pic1" src="../miemie.gif"></image>
+  <button bindtap="getOpenid" class="sanlian">发单记录</button>
+  <button bindtap="myhelp" class="sanlian">接单记录</button>
+  <button bindtap="myinfor" class="sanlian">举报用户</button>
+  <view class="hua">写给小编的话：</view>
+  <textarea bindinput="words" class="words" placeholder=" 写下你们想对小编说的话吧！"></textarea>
+  <button bindtap="ear" class="ear">按我靠近小编的耳朵</button>
+  <text class="user-motto">{{motto}}</text>
+  </swiper-item>
+  <swiper-item>
+  <view class="ggl">小编公告栏</view>
+  <view wx:for="{{notice}}" wx:key="key" class="notice">
+  {{notice2}}
+  </view>
+   <official-account></official-account>
+    <text class="user-motto">{{motto}}</text>
+  </swiper-item>
+</swiper>

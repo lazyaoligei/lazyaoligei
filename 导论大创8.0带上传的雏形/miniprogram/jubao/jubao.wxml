@@ -1,0 +1,7 @@
+  <view class="chue">除恶务尽</view>
+  <textarea bindinput="words" class="words" placeholder=" 请写下您观察到的违规用户昵称"></textarea>
+  <button bindtap="yijian" class="yijian">一键举报</button>
+  <view class="chue">历来失信人员名单</view>
+  <view wx:for="{{nickname}}" wx:key="key" class="all">
+    <view class="nickname">昵称：{{item.nickname}}</view>
+  </view>

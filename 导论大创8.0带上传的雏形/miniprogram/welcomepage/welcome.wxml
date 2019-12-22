@@ -1,0 +1,44 @@
+<view class='wenben'>
+  <view class="hy">感谢在人海中邂逅您</view>
+  <view class="weui-cell__hd">
+  <view class="weui-label"></view>
+    <view class="weui-cell weui-cell_input">
+    <view class="weui-label"></view>
+   <open-data type="userAvatarUrl"></open-data>
+</view>
+  <text class="nickname3">亲爱的</text> 
+  <open-data type="userNickName" class="nickname"></open-data>
+  <text class="nickname2">童鞋</text> 
+<view class="all">
+<view class="weui-cells weui-cells_after-title">
+  <view class="head">登录</view>
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell__hd">
+    </view>
+  </view>
+</view>
+<image class="pic1" src="../cat.jpg"></image>
+ <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input weui-cell_vcode">
+      <view class="weui-label">手机号</view>
+      <view class="weui-cell__bd">
+        <input bindinput="mobile" class="weui-input" placeholder="输入您注册信息时手机号"></input>
+      </view>
+    </view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input weui-cell_vcode">
+      <view class="weui-label">密码</view>
+      <view class="weui-cell__bd">
+        <input bindinput="password" class="weui-input" placeholder="输入您注册时设置的密码"></input>
+      </view>
+    </view>
+  </view>
+  <view class="lala1">
+  <text class="here">还没注册？</text>
+  <button class="lala2" bindtap="resist">点此注册</button>
+  </view>
+<button bindtap="tap" class="tap">登录</button>
+   </view>
+  </view>
+ </view>
+</view>
